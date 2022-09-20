@@ -1,3 +1,9 @@
 // run `node index.js` in the terminal
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+const bodyParse = require('body-parser');
+const express = require('express');
+const app = express();
+
+app.listen(8686, () => {
+  console.log('Servidor rodando');
+});
